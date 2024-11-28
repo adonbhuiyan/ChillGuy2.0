@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChillGuy V2</title>
+    <!-- favicon -->
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/282f7af6c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script src="/app.js" defer></script>
+  </head>
+
+  <body class="font-Montserrat mobile:overflow-x-hidden">
+    <div
+      class="navHero w-full bg-gradient-to-b from-green-200/70 via-blue-200/60 to-white mobile:h-[420px] h-[470px] sm:h-[600px] md:h-[850px] lg:h-[870px] xl:h-[930px]"
+    >
+      <!-- CONTRACT ADDRESS -->
+      <h1
+        class="pt-5 md:pt-8 flex mobile:-ml-2 items-center justify-center sm:font-bold text-xs mobile:text-[10px] sm:text-lg md:text-xl lg:text-2xl"
+      >
+        <img
+          class="mobile:hidden w-6 sm:w-10 md:w-12"
+          src="/img/fire.gif"
+          alt=""
+        />Contract:<span
+          class="decoration-1 underline sm:decoration-4 decoration-black text-green-500 font-bold sm:font-bold"
+          >0xfAaF490455B530d798B7E5457c22da701c6C5056</span
+        >
+        <button
+          id="contractCopyBtn"
+          type="button"
+          class="copyBtn ml-1 md:ml-3 cursor-pointer"
+        >
+          <i title="click to copy" class="fa-solid fa-copy fa-lg"></i>
+        </button>
+      </h1>
+      <!------------------------------------------------- HEADER---------------------------------------------------------------------- -->
+      <header class="sm:mt-10 w-full">
+        <nav
+          class="w-[90%] h-[140px] mx-auto flex justify-between cursor-pointer md:w-[95%] lg:w-[80%] xl:w-[70%]"
+        >
+          <!-- WEBSITE LOGO -->
+          <a
+            class="flex gap-1 items-center text-[17px] font-extrabold select-none sm:text-[30px] sm:gap-4"
+            draggable="false"
+            id="logo"
+            href="/"
+            ><img
+              class="cursor-pointer w-16 sm:w-24 rounded-full p-1 object-cover addGradientBorder"
+              src="/img/logo.png"
+              alt=""
+            />$CHILL2.0
+          </a>
+          <!--------------------------------- NAVBAR SOCIAL MEDIA IMAGES-------------------------------- -->
+          <div
+            class="flex gap-3 items-center justify-center select-none mobile:gap-2 sm:gap-4 md:gap-6"
+          >
+            <a href="//x.com/chillguy2eth" target="_blank">
+              <i
+                class="fa-brands fa-x-twitter text-[30px] navbarSocialLink sm:text-[45px] md:text-[60px]"
+              ></i>
+            </a>
+
+            <a
+              href="//dexscreener.com/ethereum/0xfAaF490455B530d798B7E5457c22da701c6C5056"
+              target="_blank"
+            >
+              <img
+                class="w-[30px] rounded-full navbarSocialLink sm:w-[47px] md:w-[60px]"
+                src="/img/Dexscreener.jpg"
+                alt=""
+            /></a>
+            <a
+              class="p-2 bg-[#16a34a] rounded-full navbarSocialLink"
+              href="//app.uniswap.org/swap?outputCurrency=0xfAaF490455B530d798B7E5457c22da701c6C5056&chain=ethereum"
+              target="_blank"
+            >
+              <img
+                class="mobile:w-[15px] w-[15px] sm:w-[30px] md:w-[40px] rounded-full"
+                src="/img/uniswap.svg"
+                alt=""
+              />
+            </a>
+            <a href="//t.me/+Xi5ollBRULs4ZjVl" target="_blank"
+              ><i
+                class="fa-brands fa-telegram text-[30px] sm:text-[45px] md:text-[60px] navbarSocialLink"
+              ></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <!-- ------------------------------------------------------------------------------HERO SECTION------------------------------------------------------------------------------------------------------------------------- -->
+      <section id="HERO" class="w-full h-[500px] sm:my-8 md:my-12 lg:my-8">
+        <div
+          class="centerHero 2xl:w-[80%] h-[600px] mx-auto flex justify-around items-start mobile:-mt-6 sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10 xl:items-center"
+        >
+          <div
+            id="CHILLGUY"
+            class="flex flex-col mt-24 ml-4 mobile:ml-2 sm:mt-[140px] sm:gap-y-1 md:gap-y-2 md:mt-[140px] lg:mt-[150px] xl:-mt-12 mobile:mt-[80px]"
+          >
+            <h1
+              class="font-extrabold tracking-wide text-[30px] mobile:text-[20px] text-center sm:text-[40px] md:text-[40px] lg:tracking-normal lg:text-[60px] text-green-500 xl:text-[70px] 2xl:text-[80px]"
+            >
+              CHILL GUY 2.0
+            </h1>
+            <div class="md:text-left">
+              <h3
+                class="lg:text-center mobile:text-[12px] text-[16px] md:text-[16px] text-center lg:text-2xl lg:font-medium"
+              >
+                Missed Chill Guy ?
+              </h3>
+              <h3
+                class="lg:text-center mobile:text-[12px] text-[16px] text-center lg:text-2xl lg:font-medium"
+              >
+                Here is Your Second Chance !
+              </h3>
+            </div>
+            <div
+              class="buttons ml-4 mobile:ml-2 sm:ml-8 flex mobile:gap-4 mt-2 gap-6 md:gap-8 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10 lg:gap-8 xl:ml-20 2xl:ml-28"
+            >
+              <a
+                href="//app.uniswap.org/swap?outputCurrency=0xfAaF490455B530d798B7E5457c22da701c6C5056&chain=ethereum"
+                target="_blank"
+              >
+                <button type="button" class="heroBtn">Buy Now</button></a
+              >
+              <a
+                href="//dexscreener.com/ethereum/0xfAaF490455B530d798B7E5457c22da701c6C5056"
+                class="heroBtn"
+                target="_blank"
+                ><button type="button">View Chart</button></a
+              >
+            </div>
+          </div>
+          <div class="heroBanner">
+            <img
+              class="w-[130px] h-[260px] sm:w-[300px] sm:h-[450px] md:w-[350px] md:h-[530px] lg:w-[400px] lg:h-[600px] xl:w-[500px] xl:h-[650px]"
+              src="/img/heroBanner.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------CHILLGUY CHILLGUY CHILLGUY  -->
+
+    <div class="bg-gradient-to-r from-[#e0f7fa] via-[#e0f2f1] to-[#e8f5e9]">
+      <div id="multiChillGuy">
+        <span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span><span>CHILL GUY</span><span>CHILL GUY</span
+        ><span>CHILL GUY</span>
+      </div>
+      <!--  --------------------------------TOKENOMICS----------------------------------------- -->
+      <section id="TOKENOMICS" class="tokenomicsMargin">
+        <!--  -->
+        <h1 class="tokenomics">Tokenomics</h1>
+        <!-- ---------------- -->
+        <div id="tokenInformation">
+          <div id="Liquidity " class="TokenomicsBox">
+            <h1 class="TokenomicsBoxh1">Liquidity</h1>
+            <h2 class="TokenomicsBoxh2">100% LOCKED</h2>
+          </div>
+
+          <div id="totalSupply " class="TokenomicsBox">
+            <h1 class="TokenomicsBoxh1">Total Supply</h1>
+            <h2 class="TokenomicsBoxh2">1000,000,000 CHILL2.0</h2>
+          </div>
+          <div id="Tax " class="TokenomicsBox mx-auto lg:mx-0">
+            <h1 class="TokenomicsBoxh1">Tax</h1>
+            <h2 class="TokenomicsBoxh2">0%</h2>
+          </div>
+        </div>
+        <!-- ------------------------BIG CONTRACT ADDRESS BAR------------ -->
+        <div id="bigContractAddress">
+          <h1
+            class="text-[13px] mobile:text-[10px] sm:text-[17px] md:text-[23px] lg:text-[31px] xl:text-[39px] 2xl:text-[50px]"
+          >
+            0xfAaF490455B530d798B7E5457c22da701c6C5056
+          </h1>
+          <button
+            id="contractCopyBtn"
+            type="button"
+            class="copyBtn ml-1 md:ml-3 cursor-pointer md:text-2xl lg:text-[29px] xl:text-[35px] 2xl:text-[50px]"
+          >
+            <i title="click to copy" class="fa-solid fa-copy fa-lg"></i>
+          </button>
+        </div>
+      </section>
+      <!-------------------------------- HOW TO BUY?--------------------------------------- -->
+      <div id="HOWTOBUY" class="tokenomicsMargin my-24 mobile:my-16">
+        <h1 class="tokenomics mb-12 lg:mb-16 xl:mb-20 2xl:mb-24">
+          HOW TO BUY?
+        </h1>
+        <div
+          class="boxContainer flex justify-center items-center flex-wrap px-6"
+        >
+          <!----------BOX 1--------  -->
+          <div class="howToBuyBoxShadow">
+            <h1 class="text-[40px] font-extrabold font-mono">1.</h1>
+            <div class="flex gap-8 flex-col mobile:gap-4">
+              <h1 class="howToBuyBoxShadowH1" style="word-spacing: 5px">
+                CREATE A WALLET
+              </h1>
+              <p class="howToBuyBoxShadowP">
+                DOWNLOAD METAMASK OR YOUR WALLET OF CHOICE FROM THE APP STORE OR
+                GOOGLE PLAY STORE FOR FREE. DESKTOP USERS, DOWNLOAD THE GOOGLE
+                CHROME EXTENSION BY GOING TO METAMASK.
+              </p>
+            </div>
+          </div>
+
+          <!--------- BOX 2---------------- -->
+          <div class="howToBuyBoxShadow">
+            <h1 class="text-[40px] font-extrabold font-mono">2.</h1>
+            <div class="flex gap-8 flex-col mobile:gap-4">
+              <h1 class="howToBuyBoxShadowH1" style="word-spacing: 5px">
+                GET SOME ETH
+              </h1>
+
+              <p class="howToBuyBoxShadowP">
+                HAVE ETH IN YOUR WALLET TO SWITCH TO CHILL2.0. IF YOU DON'T HAVE
+                ANY ETH, YOU CAN BUY DIRECTLY ON METAMASK. TRANSFER FROM ANOTHER
+                WALLET, OR BUY ON ANOTHER EXCHANGE AND SEND IT TO YOUR WALLET
+              </p>
+            </div>
+          </div>
+          <!-- -------BOX 3---- --->
+
+          <div class="howToBuyBoxShadow">
+            <h1 class="text-[40px] font-extrabold font-mono">3.</h1>
+            <div class="flex gap-8 flex-col mobile:gap-4">
+              <h1 class="howToBuyBoxShadowH1" style="word-spacing: 5px">
+                GO TO UNISWAP
+              </h1>
+              <p class="howToBuyBoxShadowP">
+                PASTE THE CHILLGUY CONTRACT ADDRESS FROM THIS PAGE INTO YOUR APP
+                OR ON THE UNISWAP WEBSITE IF YOU'RE ON DESKTOP. SELECT HOW MUCH
+                ETH YOU WANT TO SPEND AND CONFIRM AND SIGN THE TRANSACTION
+              </p>
+            </div>
+          </div>
+          <!-------- BOX 4------- -->
+          <div class="howToBuyBoxShadow">
+            <h1 class="text-[40px] font-extrabold font-mono">4.</h1>
+            <div class="flex gap-8 flex-col mobile:gap-4">
+              <h1 class="howToBuyBoxShadowH1" style="word-spacing: 5px">
+                YOU NOW HAVE CHILLGUY TOKENS
+              </h1>
+              <p class="howToBuyBoxShadowP">
+                WELCOME ON BOARD! IF THE TRANSACTION DIDN'T GO THROUGH, TRY TO
+                INCREASE YOUR SLIPPAGE % SETTINGS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!----- THE END------ -->
+      </div>
+      <!------------------------------ FOOTER-------------------------- -->
+      <footer
+        class="flex justify-center items-center flex-col gap-10 w-full pb-6 mobile:gap-12 sm:gap-7 md:gap-8 lg:gap-9 2xl:gap-10"
+      >
+        <h1
+          class="tokenomics text-[37px] mobile:text-[25px] sm:text-[48px] md:text-[60px] lg:decoration-8 lg:text-[72px] xl:text-[84px] 2xl:text-[96px]"
+        >
+          Join Our Community
+        </h1>
+        <!------------- FOOTER SOCIAL LINK-------------- -->
+        <div
+          class="items-center justify-center select-none flex gap-5 sm:gap-7 md:gap-9 lg:gap-11 xl:gap-13"
+        >
+          <a href="//x.com/chillguy2eth" target="_blank">
+            <i
+              class="fa-brands fa-x-twitter text-[50px] md:text-[55px] lg:text-[63px] xl:text-[72px] navbarSocialLink"
+            ></i>
+          </a>
+
+          <a
+            href="//dexscreener.com/ethereum/0xfAaF490455B530d798B7E5457c22da701c6C5056"
+            target="_blank"
+          >
+            <img
+              class="w-[50px] rounded-full navbarSocialLink sm:w-[55px] md:w-[60px] xl:w-[68px] 2xl:w-[76px]"
+              src="/img/Dexscreener.jpg"
+              alt=""
+          /></a>
+          <a
+            class="p-2 bg-[#16a34a] rounded-full hover:rotate-[20deg] transition duration-300 hover:scale-150"
+            href="//app.uniswap.org/swap?outputCurrency=0xfAaF490455B530d798B7E5457c22da701c6C5056&chain=ethereum"
+            target="_blank"
+          >
+            <img
+              class="w-[35px] sm:w-[40px] md:w-[45px] xl:w-[53px] 2xl:w-[60px] rounded-full"
+              src="/img/uniswap.svg"
+              alt=""
+            />
+          </a>
+          <a href="//t.me/+Xi5ollBRULs4ZjVl" target="_blank"
+            ><i
+              class="fa-brands fa-telegram text-[50px] sm:text-[55px] md:text-[58px] lg:text-[68px] xl:text-[76px] navbarSocialLink"
+            ></i>
+          </a>
+        </div>
+        <h5 class="mobile:text-[10px] text-[12px] font-light md:text-[14px]">
+          © 2024 Chill Guy 2.0 Ltd. | All rights reserved
+        </h5>
+      </footer>
+    </div>
+  </body>
+</html>
